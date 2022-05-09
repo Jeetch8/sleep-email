@@ -1,0 +1,807 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title></title>
+    <style type="text/css">
+      @media only screen and (max-width:480px) {
+        body,
+        table,
+        td,
+        p,
+        a,
+        li,
+        blockquote {
+          -webkit-text-size-adjust: none !important
+        }
+        body {
+          width: 100% !important;
+          min-width: 100% !important
+        }
+        #bodyCell {
+          padding: 0 !important
+        }
+        table.kmMobileHide {
+          display: none !important
+        }
+        table.kmDesktopOnly,
+        td.kmDesktopOnly,
+        th.kmDesktopOnly,
+        tr.kmDesktopOnly,
+        td.kmDesktopWrapHeaderMobileNone {
+          display: none !important
+        }
+        table.kmMobileOnly {
+          display: table !important
+        }
+        tr.kmMobileOnly {
+          display: table-row !important
+        }
+        td.kmMobileOnly,
+        td.kmDesktopWrapHeader,
+        th.kmMobileOnly {
+          display: table-cell !important
+        }
+        tr.kmMobileNoAlign,
+        table.kmMobileNoAlign {
+          float: none !important;
+          text-align: initial !important;
+          vertical-align: middle !important;
+          table-layout: fixed !important
+        }
+        tr.kmMobileCenterAlign {
+          float: none !important;
+          text-align: center !important;
+          vertical-align: middle !important;
+          table-layout: fixed !important
+        }
+        td.kmButtonCollection {
+          padding-left: 9px !important;
+          padding-right: 9px !important;
+          padding-top: 9px !important;
+          padding-bottom: 9px !important
+        }
+        td.kmMobileHeaderStackDesktopNone,
+        img.kmMobileHeaderStackDesktopNone,
+        td.kmMobileHeaderStack {
+          display: block !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          padding-bottom: 9px !important;
+          padding-right: 0 !important;
+          padding-left: 0 !important
+        }
+        td.kmMobileWrapHeader,
+        td.kmMobileWrapHeaderDesktopNone {
+          display: inline-block !important
+        }
+        td.kmMobileHeaderSpacing {
+          padding-right: 10px !important
+        }
+        td.kmMobileHeaderNoSpacing {
+          padding-right: 0 !important
+        }
+        table.kmDesktopAutoWidth {
+          width: inherit !important
+        }
+        table.kmMobileAutoWidth {
+          width: 100% !important
+        }
+        table.kmTextContentContainer {
+          width: 100% !important
+        }
+        table.kmBoxedTextContentContainer {
+          width: 100% !important
+        }
+        td.kmImageContent {
+          padding-left: 0 !important;
+          padding-right: 0 !important
+        }
+        img.kmImage {
+          width: 100% !important
+        }
+        td.kmMobileStretch {
+          padding-left: 0 !important;
+          padding-right: 0 !important
+        }
+        table.kmSplitContentLeftContentContainer,
+        table.kmSplitContentRightContentContainer,
+        table.kmColumnContainer,
+        td.kmVerticalButtonBarContentOuter table.kmButtonBarContent,
+        td.kmVerticalButtonCollectionContentOuter table.kmButtonCollectionContent,
+        table.kmVerticalButton,
+        table.kmVerticalButtonContent {
+          width: 100% !important
+        }
+        td.kmButtonCollectionInner {
+          padding-left: 9px !important;
+          padding-right: 9px !important;
+          padding-top: 9px !important;
+          padding-bottom: 9px !important
+        }
+        td.kmVerticalButtonIconContent,
+        td.kmVerticalButtonTextContent,
+        td.kmVerticalButtonContentOuter {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          padding-bottom: 9px !important
+        }
+        table.kmSplitContentLeftContentContainer td.kmTextContent,
+        table.kmSplitContentRightContentContainer td.kmTextContent,
+        table.kmColumnContainer td.kmTextContent,
+        table.kmSplitContentLeftContentContainer td.kmImageContent,
+        table.kmSplitContentRightContentContainer td.kmImageContent {
+          padding-top: 9px !important
+        }
+        td.rowContainer.kmFloatLeft,
+        td.rowContainer.kmFloatLeft,
+        td.rowContainer.kmFloatLeft.firstColumn,
+        td.rowContainer.kmFloatLeft.firstColumn,
+        td.rowContainer.kmFloatLeft.lastColumn,
+        td.rowContainer.kmFloatLeft.lastColumn {
+          float: left;
+          clear: both;
+          width: 100% !important
+        }
+        table.templateContainer,
+        table.templateContainer.brandingContainer,
+        div.templateContainer,
+        div.templateContainer.brandingContainer,
+        table.templateRow {
+          max-width: 660px !important;
+          width: 100% !important
+        }
+        td.templateContainerInner {
+          padding: 0 !important
+        }
+        h1 {
+          font-size: 24px !important;
+          line-height: 1.1 !important
+        }
+        h2 {
+          font-size: 18px !important;
+          line-height: 1 !important
+        }
+        h3 {
+          font-size: 16px !important;
+          line-height: 1.3 !important
+        }
+        h4 {
+          font-size: 18px !important;
+          line-height: 1.1 !important
+        }
+        td.kmTextContent {
+          font-size: 20px !important;
+          line-height: 1.3 !important
+        }
+        td.kmTextBlockInner td.kmTextContent {
+          padding-right: 18px !important;
+          padding-left: 18px !important
+        }
+        table.kmTableBlock.kmTableMobile td.kmTableBlockInner {
+          padding-left: 9px !important;
+          padding-right: 9px !important
+        }
+        table.kmTableBlock.kmTableMobile td.kmTableBlockInner .kmTextContent {
+          font-size: 20px !important;
+          line-height: 1.3 !important;
+          padding-left: 4px !important;
+          padding-right: 4px !important
+        }
+        td.kmTextBlockInner td.kmTextContent,
+        td.kmImageBlockInner,
+        td.kmSplitBlockInner,
+        td.kmButtonBlockInner,
+        td.kmButtonBarInner,
+        td.kmDividerBlockInner,
+        table.kmTableBlock.kmTableMobile td.kmTableBlockInner {
+          padding-left: 0 !important;
+          padding-right: 0 !important
+        }
+      }
+    </style>
+
+    <!--[if mso]>
+    <style>
+      .templateContainer {
+        border: 1px solid #000000;
+        background-color: #F9FAFC;
+          border-radius: 0px;
+      }
+      #brandingContainer {
+        background-color: transparent !important;
+        border: 0;
+      }
+      .templateContainerInner {
+        padding: 0px;
+      }
+    </style>
+  <![endif]-->
+    <style>
+      span.yshortcuts:hover {
+        background-color: none !important;
+        border: none !important
+      }
+      span.yshortcuts:active {
+        background-color: none !important;
+        border: none !important
+      }
+      span.yshortcuts:focus {
+        background-color: none !important;
+        border: none !important
+      }
+      .rowContainer .kmTextContent a:link {
+        color: #000;
+        font-weight: normal;
+        text-decoration: none
+      }
+      .rowContainer .kmTextContent a:visited {
+        color: #000;
+        font-weight: normal;
+        text-decoration: none
+      }
+      .kmTable .kmTableRow:last-child>td {
+        border-bottom: none !important
+      }
+    </style>
+    <style>
+      @media only screen and (max-width: 768px) {
+        .text {
+          font-size: 17px !important;
+          line-height: 25px !important;
+          color: #000 !important
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .text {
+          font-size: 17px !important;
+          line-height: 25px !important;
+          color: #000 !important
+        }
+      }
+      @font-face {
+        font-family: "Swis721Greek BT";
+        src: url(//db.onlinewebfonts.com/t/42cf5bca012963c63c52187507fadd8d.eot);
+        src: url(//db.onlinewebfonts.com/t/42cf5bca012963c63c52187507fadd8d.eot?#iefix) format("embedded-opentype"), url(//db.onlinewebfonts.com/t/42cf5bca012963c63c52187507fadd8d.woff) format("woff"), url(../fonts/Swiss-721-Greek-BT_43242.ttf) format("truetype"), url("//db.onlinewebfonts.com/t/42cf5bca012963c63c52187507fadd8d.svg#Swis721Greek BT") format("svg")
+      }
+      @media only screen and (max-width: 600px) {
+        .base-20 {
+          font-size: 14px !important
+        }
+      }
+      @font-face {
+        font-family: "Swis721Greek BT";
+        src: url(//db.onlinewebfonts.com/t/42cf5bca012963c63c52187507fadd8d.eot);
+        src: url(//db.onlinewebfonts.com/t/42cf5bca012963c63c52187507fadd8d.eot?#iefix) format("embedded-opentype"), url(//db.onlinewebfonts.com/t/42cf5bca012963c63c52187507fadd8d.woff) format("woff"), url(../fonts/Swiss-721-Greek-BT_43242.ttf) format("truetype"), url("//db.onlinewebfonts.com/t/42cf5bca012963c63c52187507fadd8d.svg#Swis721Greek BT") format("svg")
+      }
+    </style>
+  </head>
+  <body style="margin:0; padding:0">
+    <div style="display:none !important;visibility:hidden;mso-hide:all;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">Find out if you’re inadvertently doing them</div>
+    <div style="display:none !important;visibility:hidden;mso-hide:all;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌</div>
+    <center>
+      <table align="center" border="0" cellpadding="0" cellspacing="0" data-upload-file-url="/ajax/email-editor/file/upload" data-upload-files-url="/ajax/email-editor/files/upload" id="bodyTable" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:auto; margin:0; padding:0; height:100%; width:100%" width="100%">
+        <tbody>
+          <tr>
+            <td align="center" id="bodyCell" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:auto; margin:0; border-top:0; padding-bottom:20px; padding-left:20px; padding-right:20px; padding-top:50px; height:100%; width:100%" valign="top">
+
+              <!--[if !mso]>
+<!-->
+              <div class="templateContainer" style="background-color:#F9FAFC; border:1px solid #000; border-radius:0; display:table; width:660px">
+                <div class="templateContainerInner" style="padding:0">
+
+                  <!--<![endif]-->
+
+                  <!--[if mso]>
+              <table border="0" cellpadding="0" cellspacing="0" class="templateContainer"  width="660" style="border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;">
+              <tbody>
+                <tr>
+                  <td class="templateContainerInner" style="border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;">
+            <![endif]-->
+                  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                    <tbody>
+                      <tr>
+                        <td align="center" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" valign="top">
+                          <table border="0" cellpadding="0" cellspacing="0" class="templateRow" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                            <tbody>
+                              <tr>
+                                <td class="rowContainer kmFloatLeft" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" valign="top">
+                                  <table border="0" cellpadding="0" cellspacing="0" class="kmImageBlock kmDesktopOnly" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; min-width:100%" width="100%">
+                                    <tbody class="kmImageBlockOuter">
+                                      <tr>
+                                        <td class="kmImageBlockInner" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; padding:0; padding-left:0; padding-right:0" valign="top">
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0" class="kmImageContentContainer" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; min-width:100%" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td class="kmImageContent" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; font-size:0; padding:0; text-align:center" valign="top">
+                                                  <a style="max-width:100%; word-wrap:break-word" target="_self" href="http://trk.klclick.com/ls/click?upn=ubsOi-2FTQiwjZwpSP16Qp0dAu82t7ppwFWovJufIXM8jvbwV3emsQIuTwpXfz7MAFH-2BoV-2FHPzBrPX0eqZl7jScVAvSS965ZgJIrGll5WDpTtI-2F2xlpYWHlDnC-2BQTMP-2FCpPRpI-2BXN9iN1Hg-2BAoE7o8XbsTX7lqmpv9kKP828u9cLva3CTH70gSxgn2jCGZ-2FSkpeo1tjHtS7SNfvqF9R9uwUKjYzj-2F4qivQplDI2nJn9AJznEkduhBWqcezv8ycLOian6Gz1gL4wcRhG9E-2F5rs-2FMsmbukv9sc49hW-2FFcIt34V0tKt3D6Q05A1YSC4WH5RbjI0ZK_j-2F0O98F5U4fETp-2F1Yg8av1mqjk53BdiW-2B1OXixIjTdbAACIf1y-2B-2FR3zbO0NxcM0RZ-2Fkde8ff-2BoCG56QOxzsRs-2FfZc6JM2oSdRYq-2BQuWSjqnLFBvQVkYtemFoLqE5LB2A3M46sqUSTAnLe-2FpyDh6QrCE51yxySc2ANmgPuSdlZW4Y3eT-2BF6sNgJzUHfhHjs59W-2BHe-2Bld1DPOBwU5mZjoTOixIW2MYm4FFsQgryfh5wn5gCKi6nkF1FWArbITFswOKVezo2EvIRhpc6trBT8l6RaDlBQmpbL2-2F-2BUjGOxx48bdj-2F7Vc9rb-2FTnm8ygjTu-2FGaJn-2FJ4TY8kbSlHlHT1qr0ovQ4nuDhJ8CO-2BPLBzItzXtCX6otVn30R3fO-2FKIFlIx-2B-2FCGit9u9Ma1-2FCy0ZF3mSdLQ-3D-3D">
+                                                    <img align="center" alt="Read The Story" class="kmImage" src="https://d3k81ch9hvuctc.cloudfront.net/company/PugUjE/images/a410e6fc-1454-4c57-a29a-195b6ba5bca5.png" style="border:0; height:auto; line-height:100%; max-width:1200px; outline:none; text-decoration:none; font-size:12px; padding-bottom:0; vertical-align:top; width:100%; display:inline; padding:0; border-width:0; border-color:#000; border-style:none" width="660">
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+
+                                  <!--[if !mso]>
+<!-->
+                                  <table border="0" cellpadding="0" cellspacing="0" class="kmImageBlock kmMobileOnly" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; display:none; min-width:100%" width="100%">
+                                    <tbody class="kmImageBlockOuter">
+                                      <tr>
+                                        <td class="kmImageBlockInner" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; padding:0; padding-left:0; padding-right:0" valign="top">
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0" class="kmImageContentContainer" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; min-width:100%" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td class="kmImageContent" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; font-size:0; padding:0; text-align:center" valign="top">
+                                                  <a style="max-width:100%; word-wrap:break-word" target="_self" href="http://trk.klclick.com/ls/click?upn=ubsOi-2FTQiwjZwpSP16Qp0dAu82t7ppwFWovJufIXM8jdMQTejy2rP6MhpCLuEIuxoOLzs-2BK5Fgda36SpKLW-2FVJnwdwNY3ArzrVIghHlU3Hv2bVONX7n7bjCRu3AxSKuykCwPAjAftJ-2FJaKuefZdyPVejcvuDFhrwE240jai6tRIiCIBAlGWJCJuyu8vLFHvQ6QkCLFSq3MQIXgk-2BTMoQpDDz0L2gtvI299JCnKGcvM3-2Fw1JXKM9Bx67fBHG6qQh2eVM5lYhdSAXk8awHgHcu377I1Nu7U8F-2BtTpxvhwbkECHxKANo-2FS3bE9-2F87TqLmQPYWln_j-2F0O98F5U4fETp-2F1Yg8av1mqjk53BdiW-2B1OXixIjTdbAACIf1y-2B-2FR3zbO0NxcM0RZ-2Fkde8ff-2BoCG56QOxzsRs-2FfZc6JM2oSdRYq-2BQuWSjqnLFBvQVkYtemFoLqE5LB2A3M46sqUSTAnLe-2FpyDh6QrCE51yxySc2ANmgPuSdlZW4Y3eT-2BF6sNgJzUHfhHjs59W-2BHe-2Bld1DPOBwU5mZjoTOvh0zQNMjoTOgQfAoB3T62dF-2FJor2luYPranhLNGC-2BTwlo80ffsmBX-2FRLauuLREUrOxL0TmpHIPDHBStMRVrGghsZlKp1wO2pCAXFWmqrikule4q89jsqZ2fc9IVO4sCAHha-2FQqRJDQROQgA5IAeOZWCU-2F5MtwEJAphg9AaNc7WlNuDDLiru7QJ64GOFRdneiA-3D-3D">
+                                                    <img align="center" alt="Read the story" class="kmImage" src="https://d3k81ch9hvuctc.cloudfront.net/company/PugUjE/images/a4c80114-ca5d-4dd2-ae00-cb70fc759d1b.png" style="border:0; height:auto; line-height:100%; max-width:620px; outline:none; text-decoration:none; font-size:12px; padding-bottom:0; vertical-align:top; width:100%; display:inline; padding:0; border-width:0; border-color:#000; border-style:none" width=" 620 ">
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+
+                                  <!--<![endif]-->
+                                  <table border="0" cellpadding="0" cellspacing="0" class="kmTextBlock" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                    <tbody class="kmTextBlockOuter">
+                                      <tr>
+                                        <td class="kmTextBlockInner" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; padding-left:30px; padding-right:30px" valign="top">
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0" class="kmTextContentContainer" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td class="kmTextContent" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; color:#000; font-family:&quot;Helvetica Neue&quot;, Arial; font-size:16px; letter-spacing:-0.06px; line-height:1.3; max-width:100%; text-align:center; word-wrap:break-word; padding-top:9px; padding-bottom:9px; padding-left:60px; padding-right:60px" valign="top">
+                                                  <h4 style="display:block; font-family:&quot;Helvetica Neue&quot;, Arial; font-size:24px; font-style:normal; font-weight:normal; letter-spacing:-0.5px; line-height:1.3; margin-bottom:9px; margin-left:0; margin-right:0; margin-top:0; text-align:center; color:#000">Tossing and turning at bedtime can be a nightmare. But so can the wrong mix of sleep aids.&nbsp; Learn which medications are safe to take together—and which aren’t.</h4>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table border="0" cellpadding="0" cellspacing="0" class="kmDividerBlock" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                    <tbody class="kmDividerBlockOuter">
+                                      <tr>
+                                        <td class="kmDividerBlockInner" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; padding-top:30px">
+                                          <table border="0" cellpadding="0" cellspacing="0" class="kmDividerContent" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed"><span></span></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table border="0" cellpadding="0" cellspacing="0" class="kmTableBlock kmDesktopOnly" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                    <tbody class="kmTableBlockOuter">
+                                      <tr>
+                                        <td class="kmTableBlockInner" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; padding-top:9px; padding-left:40px; padding-bottom:9px; padding-right:40px" valign="top">
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0" class="kmTable" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; border-width:1px; border-style:solid; border-color:#000; text-align:left" width="100%">
+                                            <thead>
+                                              <tr>
+                                                <th class="kmTextContent" style="color:#000; font-family:&quot;Helvetica Neue&quot;, Arial; font-size:16px; letter-spacing:-0.06px; line-height:1.3; max-width:100%; text-align:left; word-wrap:break-word; font-weight:bold; padding-top:4px; padding-left:0; padding-bottom:4px; padding-right:0" valign="top">
+                                                </th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr class="kmTableRow">
+                                                <td class="kmTextContent" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; color:#000; font-family:&quot;Helvetica Neue&quot;, Arial; font-size:16px; letter-spacing:-0.06px; line-height:1.3; max-width:100%; text-align:left; word-wrap:break-word; border-right:none; border-top-style:none; border-top-width:1px; border-top-color:#d9d9d9; padding-top:20px; padding-left:30px; padding-bottom:30px; padding-right:30px" valign="top">
+                                                  <p style="margin-bottom:0; margin-left:0; margin-right:0; margin-top:0; padding-bottom:1em"><img alt="" src="https://d3k81ch9hvuctc.cloudfront.net/company/PugUjE/images/df2eeae3-d881-4f22-91ae-75d632454b10.png" style="border:0; height:auto; line-height:100%; max-width:100%; outline:none; text-decoration:none; width:100%"></p>
+                                                  <h1 style="display:block; font-family:&quot;Helvetica Neue&quot;, Arial; font-size:28px; font-style:normal; font-weight:normal; letter-spacing:-0.7px; line-height:1.1; margin-bottom:10px; margin-left:0; margin-right:0; margin-top:0; text-align:left; color:#000">Base X <a style="max-width:100%; color:#000; font-weight:normal; text-decoration:none; word-wrap:break-word" href="http://trk.klclick.com/ls/click?upn=ubsOi-2FTQiwjZwpSP16Qp0Y75-2FJyzbt2l-2Fqr-2BGOykJCax9ISn9k1RJOgi7IQa-2BEjysuDxijb0W8o0Oj0BcYLeJDQNpVUMXChJaoEMlEuX0yIeZVYti3u61p0kcILQP4cxAl3IyYFWG4p9a3XrASxDCfhbCnkVcseF2dk0DOti1JHg8G4gPzcJ2-2FasBKAquqy3bOBmRGVp3nQCAc4p6-2FjSuMZTJeoxy6O3HORlsWa4n-2FVsrZAxvlRZKMEjvLDpdCSbdW8rzKrMCE6kG471CwQMeQ-3D-3D8pL4_j-2F0O98F5U4fETp-2F1Yg8av1mqjk53BdiW-2B1OXixIjTdbAACIf1y-2B-2FR3zbO0NxcM0RZ-2Fkde8ff-2BoCG56QOxzsRs-2FfZc6JM2oSdRYq-2BQuWSjqnLFBvQVkYtemFoLqE5LB2A3M46sqUSTAnLe-2FpyDh6QrCE51yxySc2ANmgPuSdlZW4Y3eT-2BF6sNgJzUHfhHjs59W-2BHe-2Bld1DPOBwU5mZjoTOtGXmrR4JCwmxo7ehAhXjyZl5RuoBAkxF-2FwDGdkSxCvLAP6wIoFr6maC41yzoGMQR9LsYWFsFRNzVsC8lx7vKZ60R5T7o9yW-2B3XFy483LPnidsz9UV74Xfaw-2FQVaZptu0f22zQvSdtx1VfPONPFJtvosyE8Iz5jjfDIj2TKFYJDA38TUPj4i8hAPjK5QdvnVkA-3D-3D"><u>Levels</u></a>: The surprising connection between melatonin and metabolic health</h1>
+                                                  <div class="text" style="font-family:sans-serif; font-size:19px; font-style:normal; font-weight:normal; letter-spacing:-0.3px; line-height:27px"><br>
+                                                    Base partnered with Levels to investigate how the sleep hormone (and popular supplement) melatonin could be impacting your metabolic health. Some research suggests it may all come down to timing of melatonin — specifically, how you space it apart from dinnertime.<br>
+                                                    <br>
+                                                    ​<br>
+                                                    <a style="max-width:100%; color:#000; font-weight:normal; text-decoration:none; word-wrap:break-word" href="http://trk.klclick.com/ls/click?upn=ubsOi-2FTQiwjZwpSP16Qp0Y75-2FJyzbt2l-2Fqr-2BGOykJCYjMIIDCjWArQJOCf9-2FCjrMiRIYhqEjK-2FMEwVa3GREI7O2XAwnyiWN3sEBQCgWQCVy6wWdnPSdVKFgXGYWxhX91MY4D7tPNNc-2FzWR3l7yo-2FmLtEbp88lhsRp1aK4waJ0tK7LJ73eFnS9OzkfmPu3PK-2BBq4bBBZqN7cNXaQbKPJOyZ6ayH-2B3eLw2d8sCsNx05DKw4-2FgSxE2l3iuStObA-2B81C-2FFx-2BxcfsN8DMLSHJ6PrYupE-2FoNTohQwc61GwgeNEB0ldB-2B0sg007qZOlinW-2B7kLqE6mFgBd5CizszW4RvwEiag-3D-3Duf_H_j-2F0O98F5U4fETp-2F1Yg8av1mqjk53BdiW-2B1OXixIjTdbAACIf1y-2B-2FR3zbO0NxcM0RZ-2Fkde8ff-2BoCG56QOxzsRs-2FfZc6JM2oSdRYq-2BQuWSjqnLFBvQVkYtemFoLqE5LB2A3M46sqUSTAnLe-2FpyDh6QrCE51yxySc2ANmgPuSdlZW4Y3eT-2BF6sNgJzUHfhHjs59W-2BHe-2Bld1DPOBwU5mZjoTOndNVjtvITvnJgUnOgToVYkYk77DUZIZ4AdpNPsk-2FDM8c2Rx3MhO5No0jvm8PHf9n4EORcLHvRrIvphAGMKuGsPCPYvWydmOqD-2FBCXXNUjFDBVrAlkZ69Q8W6HXTkJ1VcU4DBuRoDCsubTzJ4FkGaF8W6oUInZXKe2FX8CfsEfjzoLuSOeBez-2FmIQeG18sa0aA-3D-3D"><img align="left" alt="" src="https://d3k81ch9hvuctc.cloudfront.net/company/PugUjE/images/9777d490-6b66-40cb-ae19-a52a0c1d9c37.png" style="border:0; height:55px; line-height:100%; max-width:100%; outline:none; text-decoration:none; opacity:0.9; width:200px; float:left; margin:0"></a>​
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+
+                                  <!--[if !mso]>
+<!-->
+                                  <table border="0" cellpadding="0" cellspacing="0" class="kmTableBlock kmMobileOnly" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; display:none" width="100%">
+                                    <tbody class="kmTableBlockOuter">
+                                      <tr>
+                                        <td class="kmTableBlockInner" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; padding-top:9px; padding-left:20px; padding-bottom:9px; padding-right:20px" valign="top">
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0" class="kmTable" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; border-width:1px; border-style:solid; border-color:#000; text-align:left" width="100%">
+                                            <thead>
+                                              <tr>
+                                                <th class="kmTextContent" style="color:#000; font-family:&quot;Helvetica Neue&quot;, Arial; font-size:16px; letter-spacing:-0.06px; line-height:1.3; max-width:100%; text-align:left; word-wrap:break-word; font-weight:bold; padding-top:4px; padding-left:0; padding-bottom:4px; padding-right:0" valign="top">
+                                                </th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr class="kmTableRow">
+                                                <td class="kmTextContent" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; color:#000; font-family:&quot;Helvetica Neue&quot;, Arial; font-size:16px; letter-spacing:-0.06px; line-height:1.3; max-width:100%; text-align:left; word-wrap:break-word; border-right:none; border-top-style:none; border-top-width:1px; border-top-color:#d9d9d9; padding-top:15px; padding-left:20px; padding-bottom:30px; padding-right:20px" valign="top">
+                                                  <p style="margin-bottom:0; margin-left:0; margin-right:0; margin-top:0; padding-bottom:1em"><img alt="" src="https://d3k81ch9hvuctc.cloudfront.net/company/PugUjE/images/df2eeae3-d881-4f22-91ae-75d632454b10.png" style="border:0; height:auto; line-height:100%; max-width:100%; outline:none; text-decoration:none; width:100%"></p>
+                                                  <h1 style="display:block; font-family:&quot;Helvetica Neue&quot;, Arial; font-size:28px; font-style:normal; font-weight:normal; letter-spacing:-0.7px; line-height:1.1; margin-bottom:10px; margin-left:0; margin-right:0; margin-top:0; text-align:left; color:#000">New Research Alert: The surprising connection between melatonin and metabolic health</h1>
+                                                  <div class="text" style="font-family:sans-serif; font-size:19px; font-style:normal; font-weight:normal; letter-spacing:-0.3px; line-height:27px"><br>
+                                                    Base partnered with Levels to investigate how the sleep hormone (and popular supplement) melatonin could be impacting your metabolic health. Some research suggests it may all come down to timing of melatonin — specifically, how you space it apart from dinnertime.<br>
+                                                    <br>
+                                                    ​<br>
+                                                    <img align="left" alt="" src="https://d3k81ch9hvuctc.cloudfront.net/company/PugUjE/images/9777d490-6b66-40cb-ae19-a52a0c1d9c37.png" style="border:0; height:55px; line-height:100%; max-width:100%; outline:none; text-decoration:none; opacity:0.9; width:200px; float:left; margin:0">​
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+
+                                  <!--<![endif]-->
+                                  <table border="0" cellpadding="0" cellspacing="0" class="kmDividerBlock" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                    <tbody class="kmDividerBlockOuter">
+                                      <tr>
+                                        <td class="kmDividerBlockInner" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; padding-top:30px">
+                                          <table border="0" cellpadding="0" cellspacing="0" class="kmDividerContent" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed"><span></span></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table border="0" cellpadding="0" cellspacing="0" class="kmTableBlock kmDesktopOnly" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                    <tbody class="kmTableBlockOuter">
+                                      <tr>
+                                        <td class="kmTableBlockInner" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; padding-top:9px; padding-left:40px; padding-bottom:9px; padding-right:40px" valign="top">
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0" class="kmTable" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; border-width:1px; border-style:solid; border-color:#000; text-align:left" width="100%">
+                                            <thead>
+                                              <tr>
+                                                <th class="kmTextContent" style="color:#000; font-family:&quot;Helvetica Neue&quot;, Arial; font-size:16px; letter-spacing:-0.06px; line-height:1.3; max-width:100%; text-align:left; word-wrap:break-word; font-weight:bold; padding-top:4px; padding-left:0; padding-bottom:4px; padding-right:0" valign="top">
+                                                </th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr class="kmTableRow">
+                                                <td class="kmTextContent" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; color:#000; font-family:&quot;Helvetica Neue&quot;, Arial; font-size:16px; letter-spacing:-0.06px; line-height:1.3; max-width:100%; text-align:left; word-wrap:break-word; border-right:none; border-top-style:none; border-top-width:1px; border-top-color:#d9d9d9; padding-top:20px; padding-left:30px; padding-bottom:30px; padding-right:30px" valign="top">
+                                                  <p style="margin-bottom:0; margin-left:0; margin-right:0; margin-top:0; padding-bottom:1em"><img alt="" src="https://d3k81ch9hvuctc.cloudfront.net/company/PugUjE/images/7593aff1-485c-46d3-8735-957ae13a6976.png" style="border:0; height:auto; line-height:100%; max-width:100%; outline:none; text-decoration:none; width:100%"></p>
+                                                  <h1 style="display:block; font-family:&quot;Helvetica Neue&quot;, Arial; font-size:28px; font-style:normal; font-weight:normal; letter-spacing:-0.7px; line-height:1.1; margin-bottom:10px; margin-left:0; margin-right:0; margin-top:0; text-align:left; color:#000">How Base works with sleep trackers</h1>
+                                                  <div class="text" style="font-family:sans-serif; font-size:19px; font-style:normal; font-weight:normal; letter-spacing:-0.3px; line-height:27px"><br>
+                                                    While wearable devices like the Oura Ring and Apple Watch can give you useful data — like how much deep sleep you are getting — they fall short&nbsp;when it comes to understanding the “why” behind your metrics. That’s where Base comes in, and why the pairing can be a game-changer. For instance, if you see you’ve been getting less shuteye&nbsp;lately, you can use Base to check your melatonin levels and other&nbsp;biomarkers like cortisol (the stress hormone). Once you know what's really at play, you can take the right steps to get better ZZZs.&nbsp;</div>
+                                                  <div class="text" style="font-family:sans-serif; font-size:19px; font-style:normal; font-weight:normal; letter-spacing:-0.3px; line-height:27px"><br>
+                                                    Ready to learn about the hormones that affect your sleep?<br>
+                                                    ​<br>
+                                                    <a style="max-width:100%; color:#000; font-weight:normal; text-decoration:none; word-wrap:break-word" href="http://trk.klclick.com/ls/click?upn=ubsOi-2FTQiwjZwpSP16Qp0cfa4P0wrRJzKKOlYSYBuwcmBo8DcGoG6JRvqtY10LPcWIVgy9nw4xesqfRK0iAmgD3KMyQnrZNaD-2F2fzRjl5Bp2M6aeDrncWjn-2Fa1bO0gm9vmMMD-2Fhm3cZ-2BKQhsjc6y10dRR8rMuSjes5qy8TQ6emskYKMyHeFkWGVKwOYn-2BX6Z4IQL6j4WnMiQzsqp2TrPwvTP5RtGieI984diOcFC7DYwoxWX79hyxsRzJzPpj3rTG4J4b2Z1DEnmHel9sbxPDw-3D-3DJZ8q_j-2F0O98F5U4fETp-2F1Yg8av1mqjk53BdiW-2B1OXixIjTdbAACIf1y-2B-2FR3zbO0NxcM0RZ-2Fkde8ff-2BoCG56QOxzsRs-2FfZc6JM2oSdRYq-2BQuWSjqnLFBvQVkYtemFoLqE5LB2A3M46sqUSTAnLe-2FpyDh6QrCE51yxySc2ANmgPuSdlZW4Y3eT-2BF6sNgJzUHfhHjs59W-2BHe-2Bld1DPOBwU5mZjoTOq18YHKmn8xMHnVEdgZE6-2FxRiQ4h1qwqKj6Z0tNpZbUCq3FyRM-2BHcUQUC809-2FdFsbiwaSt6CO1AMBtKSk6zm2x4dbVxHAImQi-2F7FnjQcrOPF1sA1FpN5HEqyYibvYnWH6jmpJoiEhuRkRZwtizvpHiFhbQdY-2BODi0VVLjeH-2BqbNASKGpsyXDIa4FMjgeVOFcKg-3D-3D"><img align="left" alt="" src="https://d3k81ch9hvuctc.cloudfront.net/company/PugUjE/images/f93c6cc1-2b3f-4efa-a905-4d13b05a6d52.png" style="border:0; height:51px; line-height:100%; max-width:100%; outline:none; text-decoration:none; opacity:0.9; width:206px; float:left; margin:0"></a>​
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+
+                                  <!--[if !mso]>
+<!-->
+                                  <table border="0" cellpadding="0" cellspacing="0" class="kmTableBlock kmMobileOnly" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; display:none" width="100%">
+                                    <tbody class="kmTableBlockOuter">
+                                      <tr>
+                                        <td class="kmTableBlockInner" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; padding-top:9px; padding-left:20px; padding-bottom:9px; padding-right:20px" valign="top">
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0" class="kmTable" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; border-width:1px; border-style:solid; border-color:#000; text-align:left" width="100%">
+                                            <thead>
+                                              <tr>
+                                                <th class="kmTextContent" style="color:#000; font-family:&quot;Helvetica Neue&quot;, Arial; font-size:16px; letter-spacing:-0.06px; line-height:1.3; max-width:100%; text-align:left; word-wrap:break-word; font-weight:bold; padding-top:4px; padding-left:0; padding-bottom:4px; padding-right:0" valign="top">
+                                                </th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr class="kmTableRow">
+                                                <td class="kmTextContent" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; color:#000; font-family:&quot;Helvetica Neue&quot;, Arial; font-size:16px; letter-spacing:-0.06px; line-height:1.3; max-width:100%; text-align:left; word-wrap:break-word; border-right:none; border-top-style:none; border-top-width:1px; border-top-color:#d9d9d9; padding-top:15px; padding-left:20px; padding-bottom:30px; padding-right:20px" valign="top">
+                                                  <p style="margin-bottom:0; margin-left:0; margin-right:0; margin-top:0; padding-bottom:1em"><img alt="" src="https://d3k81ch9hvuctc.cloudfront.net/company/PugUjE/images/1a96c460-f78f-4f27-9f86-67c29d5d63cf.png" style="border:0; height:auto; line-height:100%; max-width:100%; outline:none; text-decoration:none; width:100%"></p>
+                                                  <h1 style="display:block; font-family:&quot;Helvetica Neue&quot;, Arial; font-size:28px; font-style:normal; font-weight:normal; letter-spacing:-0.7px; line-height:1.1; margin-bottom:10px; margin-left:0; margin-right:0; margin-top:0; text-align:left; color:#000">How Base Works With Sleep Trackers</h1>
+                                                  <div class="text" style="font-family:sans-serif; font-size:19px; font-style:normal; font-weight:normal; letter-spacing:-0.3px; line-height:27px"><br>
+                                                    While wearable devices like the Oura Ring and Apple Watch can give you data like how much deep sleep you are getting, they have their limits — especially when it comes to understanding the “why” behind your metrics. That’s where Base comes in. For instance, if you see you’ve been getting less deep sleep lately, you can use Base to check your melatonin levels and related biomarkers like cortisol (the stress hormone) or CRP (inflammation), and get a customized improvement plan.<br>
+                                                    ​<br>
+                                                    <img align="left" alt="" src="https://d3k81ch9hvuctc.cloudfront.net/company/PugUjE/images/f93c6cc1-2b3f-4efa-a905-4d13b05a6d52.png" style="border:0; height:49px; line-height:100%; max-width:100%; outline:none; text-decoration:none; opacity:0.9; width:200px; float:left; margin:0">​
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+
+                                  <!--<![endif]-->
+                                  <table border="0" cellpadding="0" cellspacing="0" class="kmDividerBlock" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                    <tbody class="kmDividerBlockOuter">
+                                      <tr>
+                                        <td class="kmDividerBlockInner" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; padding-top:50px">
+                                          <table border="0" cellpadding="0" cellspacing="0" class="kmDividerContent" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed"><span></span></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table border="0" cellpadding="0" cellspacing="0" class="kmDividerBlock" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                    <tbody class="kmDividerBlockOuter">
+                                      <tr>
+                                        <td class="kmDividerBlockInner" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; padding-top:0">
+                                          <table border="0" cellpadding="0" cellspacing="0" class="kmDividerContent" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed"><span></span></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table border="0" cellpadding="0" cellspacing="0" class="kmImageBlock kmDesktopOnly" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; min-width:100%" width="100%">
+                                    <tbody class="kmImageBlockOuter">
+                                      <tr>
+                                        <td class="kmImageBlockInner" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; padding:9px; padding-left:9; padding-right:9" valign="top">
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0" class="kmImageContentContainer" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; min-width:100%" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td class="kmImageContent" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; font-size:0; padding:0; padding-top:0; padding-bottom:0; padding-left:9px; padding-right:9px; text-align:center" valign="top">
+                                                  <a style="max-width:100%; word-wrap:break-word" target="_self" href="http://trk.klclick.com/ls/click?upn=ubsOi-2FTQiwjZwpSP16Qp0WtWVrWmFkcXEnTH3T8Bsli7Nv7o8Zo4Rr5iTLFgXCqCSPi1adHQD0Z7ZJSzj3lhikx-2BSGbSGyJqb6XpTBYn9EiWGfv9OmYQyJlercB8vm1Yz9zDWFFhduc9x6RhwXW-2BBd3WHjYaAHzAfIH-2F0ryk53I3dUKzi609-2BmEy3mhAz-2Bd46d1csJu9kTf7Vr5nkEz3jNUOKMRMKthcrh6isd5x51-2FzmHYnylL4-2BmvDEbdjLaqjxGAvEFLNy2YYq9gx6B4ZNFIBwyjHvl-2Fff1r96-2BowhlM-3DLQR8_j-2F0O98F5U4fETp-2F1Yg8av1mqjk53BdiW-2B1OXixIjTdbAACIf1y-2B-2FR3zbO0NxcM0RZ-2Fkde8ff-2BoCG56QOxzsRs-2FfZc6JM2oSdRYq-2BQuWSjqnLFBvQVkYtemFoLqE5LB2A3M46sqUSTAnLe-2FpyDh6QrCE51yxySc2ANmgPuSdlZW4Y3eT-2BF6sNgJzUHfhHjs59W-2BHe-2Bld1DPOBwU5mZjoTOk5UJneyXnbsTIckzU2pN7R-2F6QasN8HjPGw5cz78L8AuIrgjXhmX0GsSRWgmprWHb1NHefpxTwScXdOnRFahe9XVqxLWabn51vKwF-2FFOqYH00jrlauIMDIE8rhRy7ThBu4Ega0ypbC2Nox43q-2FmuvJlym9aIaZ7lJSpe6YccVm08byJx46W8hEZo6p7lSdY-2FJw-3D-3D">
+                                                    <img align="center" alt="" class="kmImage" src="https://d3k81ch9hvuctc.cloudfront.net/company/PugUjE/images/04ec4253-0e71-4424-9724-b8e7a5d457b9.png" style="border:0; height:auto; line-height:100%; max-width:180px; outline:none; text-decoration:none; font-size:12px; padding-bottom:0; vertical-align:top; width:100%; display:inline; padding:0; border-width:0" width="180">
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+
+                                  <!--[if !mso]>
+<!-->
+                                  <table border="0" cellpadding="0" cellspacing="0" class="kmImageBlock kmMobileOnly" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; display:none; min-width:100%" width="100%">
+                                    <tbody class="kmImageBlockOuter">
+                                      <tr>
+                                        <td class="kmImageBlockInner" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; padding:9px; padding-left:9; padding-right:9" valign="top">
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0" class="kmImageContentContainer" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; min-width:100%" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td class="kmImageContent" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; font-size:0; padding:0; padding-top:0; padding-bottom:0; padding-left:9px; padding-right:9px; text-align:center" valign="top">
+                                                  <a style="max-width:100%; word-wrap:break-word" target="_self" href="http://trk.klclick.com/ls/click?upn=ubsOi-2FTQiwjZwpSP16Qp0WtWVrWmFkcXEnTH3T8Bsli7Nv7o8Zo4Rr5iTLFgXCqCSPi1adHQD0Z7ZJSzj3lhikx-2BSGbSGyJqb6XpTBYn9EiWGfv9OmYQyJlercB8vm1Yz9zDWFFhduc9x6RhwXW-2BBd3WHjYaAHzAfIH-2F0ryk53I3dUKzi609-2BmEy3mhAz-2Bd46d1csJu9kTf7Vr5nkEz3jNUOKMRMKthcrh6isd5x51-2FzmHYnylL4-2BmvDEbdjLaqjxGAvEFLNy2YYq9gx6B4ZNFIBwyjHvl-2Fff1r96-2BowhlM-3DFvcd_j-2F0O98F5U4fETp-2F1Yg8av1mqjk53BdiW-2B1OXixIjTdbAACIf1y-2B-2FR3zbO0NxcM0RZ-2Fkde8ff-2BoCG56QOxzsRs-2FfZc6JM2oSdRYq-2BQuWSjqnLFBvQVkYtemFoLqE5LB2A3M46sqUSTAnLe-2FpyDh6QrCE51yxySc2ANmgPuSdlZW4Y3eT-2BF6sNgJzUHfhHjs59W-2BHe-2Bld1DPOBwU5mZjoTOuBs5EbMD13zrVgWPoZrw8Mfe0bZjmUGIzlquWroZjLv8lmMfLyVnhd2xZklJeHEm8kdgj4RGGHYzizGwj53RoC4I5wAl35Wx4-2BGr2Xl4t5v8MhEK-2Bl6XsbZNI5HdoOlKa2WY-2FvXlErOvFi7l0Cpq2a0lj4L5nLrSvalb7Uq8NTvzC1dqoVUX9IquWBW6h9Hcg-3D-3D">
+                                                    <img align="center" alt="" class="kmImage" src="https://d3k81ch9hvuctc.cloudfront.net/company/PugUjE/images/04ec4253-0e71-4424-9724-b8e7a5d457b9.png" style="border:0; height:auto; line-height:100%; max-width:180px; outline:none; text-decoration:none; font-size:12px; padding-bottom:0; vertical-align:top; width:100%; display:inline; padding:0; border-width:0" width="180">
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+
+                                  <!--<![endif]-->
+                                  <table border="0" cellpadding="0" cellspacing="0" class="kmTextBlock" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                    <tbody class="kmTextBlockOuter">
+                                      <tr>
+                                        <td class="kmTextBlockInner" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; padding-left:20px; padding-right:20px" valign="top">
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0" class="kmTextContentContainer" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td class="kmTextContent" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; color:#000; font-family:&quot;Helvetica Neue&quot;, Arial; font-size:16px; letter-spacing:-0.06px; line-height:1.3; max-width:100%; text-align:left; word-wrap:break-word; padding-top:9px; padding-bottom:9px; padding-left:18px; padding-right:18px" valign="top">
+                                                  <h3 style="display:block; font-family:&quot;Helvetica Neue&quot;, Arial; font-size:20px; font-style:normal; font-weight:normal; letter-spacing:-0.5px; line-height:1.3; margin-bottom:5px; margin-left:0; margin-right:0; margin-top:0; text-align:center; color:#000">Follow us on Instagram for tips to help you sleep better, feel more energized, heal your gut health, and more.</h3>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table border="0" cellpadding="0" cellspacing="0" class="kmSplitBlock" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                    <tbody class="kmSplitBlockOuter">
+                                      <tr>
+                                        <td class="kmSplitBlockInner" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; padding-top:9px; padding-bottom:9px; padding-left:18px; padding-right:18px" valign="top">
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0" class="kmSplitContentOuter" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td class="kmSplitContentInner" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" valign="top">
+                                                  <table align="left" border="0" cellpadding="0" cellspacing="0" class="kmSplitContentLeftContentContainer" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="306">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td class="kmImageContent" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; font-size:0; padding:0; text-align:center" valign="top">
+                                                          <a style="max-width:100%; word-wrap:break-word" target="_self" href="http://trk.klclick.com/ls/click?upn=ubsOi-2FTQiwjZwpSP16Qp0WtWVrWmFkcXEnTH3T8BslhMG1AWcNKgWlXnrCrxBFxBYv4velggx6xrFJKAT-2FRgr7XrDvRHz5IEcXWLFCxo-2BtEfHdK3jwgKGppaEhhwMFsw6PpRDEbW7NWtq6P0a3F5Z8S7ZBMjop9agSsbia5SIkbz7ePQDT20xqaBB-2Bhne30K5QGfgQiQKAGeZ9M2rmq7AhTSXodNttyEGMpw9nKa4ybG7Kbz9H-2BM-2FY72tL0qNdIeJeO7FqsEo1-2Br4f1ZF0Lr-2FlsoaFiawT3eJ8OiHbVNevA-3DB6jZ_j-2F0O98F5U4fETp-2F1Yg8av1mqjk53BdiW-2B1OXixIjTdbAACIf1y-2B-2FR3zbO0NxcM0RZ-2Fkde8ff-2BoCG56QOxzsRs-2FfZc6JM2oSdRYq-2BQuWSjqnLFBvQVkYtemFoLqE5LB2A3M46sqUSTAnLe-2FpyDh6QrCE51yxySc2ANmgPuSdlZW4Y3eT-2BF6sNgJzUHfhHjs59W-2BHe-2Bld1DPOBwU5mZjoTOqFL4z1RQGrPj87j1HJvlOktzMNxzLz7JUP4K9ya4Bp8u-2BxJy6ObVzqjanQ30j2WdkW2PPc06V7N0iV2K-2BBTYdU6TC5zF4G-2BfGBiPuJEBTCWMWlEhccMoeY2mRX81V8VN8q9v49rznp2oA9ccjVQvimLm3YoAcwrkCnDyRVXJ3zuBUUessC4ydzA3NVeu1lNBQ-3D-3D">
+                                                            <img align="center" alt="" class="kmImage" src="https://d3k81ch9hvuctc.cloudfront.net/company/PugUjE/images/394b50b8-e342-4af0-8dfe-33fd3834907a.png" style="border:0; height:auto; line-height:100%; max-width:1080px; outline:none; text-decoration:none; font-size:12px; padding-bottom:0; vertical-align:top; width:100%; display:inline" width="306">
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                  <table align="right" border="0" cellpadding="0" cellspacing="0" class="kmSplitContentRightContentContainer" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="306">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td class="kmImageContent" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; font-size:0; padding:0; text-align:center" valign="top">
+                                                          <a style="max-width:100%; word-wrap:break-word" target="_self" href="http://trk.klclick.com/ls/click?upn=ubsOi-2FTQiwjZwpSP16Qp0WtWVrWmFkcXEnTH3T8BsljesuUMiqJGj4VJhu5sju4llfGrGnsEc9APu1Xyt6PiCL2DRSFW4okMx4VBwpHFPlRr5IK7e3jqSC-2F-2B7P84wMTfA0tfiORtH1pdI1J3I3O1QmkdfazM5-2BY8ksg77z-2Bfm5UnSCM4uYZgUZhQeEIF2IRq1GvyHRZ7tFTL6XhpSNQGRdi2zMojzvMu-2B3627MtBXZJz5DSF2gBizhF2QeuPjJcCxfMOasPGY3dKdRLLQDL17aL0nn3CRW9xUqGA7xR6-2Fck-3DB7qh_j-2F0O98F5U4fETp-2F1Yg8av1mqjk53BdiW-2B1OXixIjTdbAACIf1y-2B-2FR3zbO0NxcM0RZ-2Fkde8ff-2BoCG56QOxzsRs-2FfZc6JM2oSdRYq-2BQuWSjqnLFBvQVkYtemFoLqE5LB2A3M46sqUSTAnLe-2FpyDh6QrCE51yxySc2ANmgPuSdlZW4Y3eT-2BF6sNgJzUHfhHjs59W-2BHe-2Bld1DPOBwU5mZjoTOto46e95fXByfVDm-2FlVG332D6PIYhVqbeo6W3sccu6Vt3QgZqEAlWZOzbRmm-2FVSPYgaFkAz4osXvIesz9q-2BMc0Gw5BlNy-2BBzrOfbzc9BbOPFyjRkejmZ4t3qouourrjPW-2FqTf5dTRWuJKtaAXWiblqBwZagWFz0d3pyFH68iC5XIcFbCeNn-2B3SlaJYKIUKIegA-3D-3D">
+                                                            <img align="center" alt="" class="kmImage" src="https://d3k81ch9hvuctc.cloudfront.net/company/PugUjE/images/972e9a37-e50b-495a-84f3-4e709d3cb027.png" style="border:0; height:auto; line-height:100%; max-width:1080px; outline:none; text-decoration:none; font-size:12px; padding-bottom:0; vertical-align:top; width:100%; display:inline" width="306">
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table border="0" cellpadding="0" cellspacing="0" class="kmTextBlock" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                    <tbody class="kmTextBlockOuter">
+                                      <tr>
+                                        <td class="kmTextBlockInner" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" valign="top">
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0" class="kmTextContentContainer" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td class="kmTextContent" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; color:#000; font-family:&quot;Helvetica Neue&quot;, Arial; font-size:16px; letter-spacing:-0.06px; line-height:1.3; max-width:100%; text-align:center; word-wrap:break-word; padding-top:9px; padding-bottom:9px; padding-left:18px; padding-right:18px" valign="top">
+                                                  <div class="base-20 color-black" style="font-family:Swis721Greek BT, sans-serif; font-size:14px; font-style:normal; font-weight:normal; letter-spacing:-0.02em; line-height:120%; padding-right:15px; color:#000; text-align:center"><span style="color: rgb(0, 0, 0); font-family: sans-serif; letter-spacing: -0.46px; text-align: center;"> #athomelabtesting #getbase&nbsp; #stopguesingstartmeasuring</span></div>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table border="0" cellpadding="0" cellspacing="0" class="kmDividerBlock" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                    <tbody class="kmDividerBlockOuter">
+                                      <tr>
+                                        <td class="kmDividerBlockInner" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; padding-top:18px; padding-bottom:9px; padding-left:18px; padding-right:18px">
+                                          <table border="0" cellpadding="0" cellspacing="0" class="kmDividerContent" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; border-top-width:1px; border-top-style:solid; border-top-color:#000" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed"><span></span></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table border="0" cellpadding="0" cellspacing="0" class="kmTextBlock" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                    <tbody class="kmTextBlockOuter">
+                                      <tr>
+                                        <td class="kmTextBlockInner" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" valign="top">
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0" class="kmTextContentContainer" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td class="kmTextContent" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; color:#000; font-family:&quot;Helvetica Neue&quot;, Arial; font-size:16px; letter-spacing:-0.06px; line-height:1; max-width:100%; text-align:left; word-wrap:break-word; padding-top:9px; padding-bottom:9px; padding-left:18px; padding-right:18px" valign="top">
+                                                  <div class="footer color-black" style="color:#000; font-family:sans-serif; font-size:20px; font-style:normal; font-weight:normal; letter-spacing:-0.02em; line-height:130%; padding-right:15px; text-align:center"><span style="font-size:12px;"><a href="mailto:hi@get-base.com" style="max-width:100%; color:#000; font-weight:normal; text-decoration:none; word-wrap:break-word">hi@get-base.com</a></span><br>
+                                                    <strong><span style="font-size:12px;">Our mailing address is:</span></strong>
+                                                  </div>
+                                                  <div class="footer color-black" style="color:#000; font-family:sans-serif; font-size:20px; font-style:normal; font-weight:normal; letter-spacing:-0.02em; line-height:130%; padding-right:15px; text-align:center"><span style="font-size:12px;">355 Madison Ave&nbsp;<span style="letter-spacing: -0.02em;">New York, NY 10017</span></span></div>
+                                                  <div class="footer color-black" style="color:#000; font-family:sans-serif; font-size:20px; font-style:normal; font-weight:normal; letter-spacing:-0.02em; line-height:130%; padding-right:15px; text-align:center"><span style="font-size:12px;">Become an <a style="max-width:100%; color:#000; font-weight:normal; text-decoration:none; word-wrap:break-word" href="http://trk.klclick.com/ls/click?upn=ubsOi-2FTQiwjZwpSP16Qp0X-2B-2BeRy-2Fx4h093h47RmYs2olYQ4XIjzmpSQwy7xWOr4-2BANZbfLOv6WjZPJL5pNDY5Zx0pekNGfZbUN0b-2F3lyauRi28IUqU-2BinhFebdwvCjLxGLWmYZMs1-2F5yyXvK7tiFHYdfsfnTrLMFVO4aQ53sRPnb-2BKG04NfSQ0nij71JKpbd26QTnshoCaN40-2FL6Bt-2BU-2BfuJr1Aug8wtRlpgjDXHH7ZIQCuNjThSY5jbU6vf8-2Bg-2FyAgUcjzPHgGIwkEdBhhXeqs2X6u3oGxU-2Fvh1a-2B1wV8A-3DD4t6_j-2F0O98F5U4fETp-2F1Yg8av1mqjk53BdiW-2B1OXixIjTdbAACIf1y-2B-2FR3zbO0NxcM0RZ-2Fkde8ff-2BoCG56QOxzsRs-2FfZc6JM2oSdRYq-2BQuWSjqnLFBvQVkYtemFoLqE5LB2A3M46sqUSTAnLe-2FpyDh6QrCE51yxySc2ANmgPuSdlZW4Y3eT-2BF6sNgJzUHfhHjs59W-2BHe-2Bld1DPOBwU5mZjoTOi-2FR4iW0lBafw4WCuR7mBu5nYJDgTE-2BpotXvZtl4enUSsMCx7ueCJOTTXlKY9Wa1YQFD3T44tiMXGzBrHjtyS3EmLOHYi8wrH0NgQ82B8OwaZgj-2FSNXZiJv7UGfGcUGANEmIw4Am30pBJFjtzrA8j-2F647ugu1rHJvsUomnwVx6yCgM1lHxGoJJB-2B1Sz-2FZapPqw-3D-3D"><u>affiliate partner</u></a></span></div>
+                                                  <div class="footer color-black" style="color:#000; font-family:sans-serif; font-size:20px; font-style:normal; font-weight:normal; letter-spacing:-0.02em; line-height:130%; padding-right:15px; text-align:center"><span style="font-size:12px;">Don't want to hear from us anymore? <u><a class="unsubscribe-link" style="color:#000000;font-weight:normal;text-decoration:none;" href="#">Unsubscribe</a> </u></span></div>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table border="0" cellpadding="0" cellspacing="0" class="kmButtonBarBlock" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                    <tbody class="kmButtonBarOuter">
+                                      <tr>
+                                        <td align="center" class="kmButtonBarInner" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; padding-top:3px; padding-bottom:14px; padding-left:9px; padding-right:9px" valign="top">
+                                          <table border="0" cellpadding="0" cellspacing="0" class="kmButtonBarContentContainer" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td align="center" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; padding-left:9px; padding-right:9px">
+                                                  <table border="0" cellpadding="0" cellspacing="0" class="kmButtonBarContent" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; font-family:&quot;Helvetica Neue&quot;, Arial">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td align="center" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" valign="top">
+                                                          <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed">
+                                                            <tbody>
+                                                              <tr>
+                                                                <td style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" valign="top">
+                                                                  <table align="left" border="0" cellpadding="0" cellspacing="0" class="" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed">
+                                                                    <tbody>
+                                                                      <tr>
+                                                                        <td align="center" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; padding-right:10px" valign="top">
+                                                                          <a style="max-width:100%; word-wrap:break-word" target="_blank" href="http://trk.klclick.com/ls/click?upn=ubsOi-2FTQiwjZwpSP16Qp0WtWVrWmFkcXEnTH3T8Bsli7Nv7o8Zo4Rr5iTLFgXCqCSPi1adHQD0Z7ZJSzj3lhikx-2BSGbSGyJqb6XpTBYn9EiWGfv9OmYQyJlercB8vm1Yz9zDWFFhduc9x6RhwXW-2BBd3WHjYaAHzAfIH-2F0ryk53I3dUKzi609-2BmEy3mhAz-2Bd46d1csJu9kTf7Vr5nkEz3jNUOKMRMKthcrh6isd5x51-2FzmHYnylL4-2BmvDEbdjLaqjxGAvEFLNy2YYq9gx6B4ZNFIBwyjHvl-2Fff1r96-2BowhlM-3Du1sB_j-2F0O98F5U4fETp-2F1Yg8av1mqjk53BdiW-2B1OXixIjTdbAACIf1y-2B-2FR3zbO0NxcM0RZ-2Fkde8ff-2BoCG56QOxzsRs-2FfZc6JM2oSdRYq-2BQuWSjqnLFBvQVkYtemFoLqE5LB2A3M46sqUSTAnLe-2FpyDh6QrCE51yxySc2ANmgPuSdlZW4Y3eT-2BF6sNgJzUHfhHjs59W-2BHe-2Bld1DPOBwU5mZjoTOkCV7pJ5OjD5mz4cz49rVNhUC17R-2F6XNRD7-2B2lIaRwQRT8TpgaQMSBa88Y4Enb4s52kGLqD9dxd-2F0-2FFtPc4xZhVtn3s18tJMoRGhUYoFas6yw3wi5BvWLFN7r7Cn0Zczw-2FscAY9Imbc-2BGbe-2FDK5WRpCDtpjuk5jGoB04bAQzYNcb14DILphR21FnQhlCVJ24NA-3D-3D"><img alt="Instagram" class="kmButtonBlockIcon" src="https://d3k81ch9hvuctc.cloudfront.net/company/PugUjE/images/42c646cb-3b74-4ec7-bd22-e54eb55a817b.png?v=0" style="border:0; height:auto; line-height:100%; max-width:100%; outline:none; text-decoration:none; width:25pxpx; display:block" width="25"></a>
+                                                                        </td>
+                                                                      </tr>
+                                                                    </tbody>
+                                                                  </table>
+
+                                                                  <!--[if gte mso 6]></td><td align="left" valign="top"><![endif]-->
+                                                                  <table align="left" border="0" cellpadding="0" cellspacing="0" class="" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed">
+                                                                    <tbody>
+                                                                      <tr>
+                                                                        <td align="center" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed; padding-right:10px" valign="top">
+                                                                          <a style="max-width:100%; word-wrap:break-word" target="_blank" href="http://trk.klclick.com/ls/click?upn=ubsOi-2FTQiwjZwpSP16Qp0W5gBT6aOZ0SuLnS0UT6jZi-2Fr-2Foz1xH4gMgBtkmXnwd0l5JdUmX7nGdUa9u7eAOpuD5IvvLGlH6B4FO3yCCTWCuqyA-2BEkQxORtlQZKNlEAMrPpr7trk3scdw9GXDpH3nOig-2BYeIbNkYY2W3D2sCueMzQMtY79qIVHmjYtaEP4Co5YvAliP7J9VJkCtbT-2BJIxFuASKJ8J9YsKogvZonyIXNa652Xhc9g-2BZ6a4l4tF-2FLBxbn4pC9sa5-2Fi8izmq5y4pzs61UmjOAUP1C2N-2FOv5jpaU-3Ddytr_j-2F0O98F5U4fETp-2F1Yg8av1mqjk53BdiW-2B1OXixIjTdbAACIf1y-2B-2FR3zbO0NxcM0RZ-2Fkde8ff-2BoCG56QOxzsRs-2FfZc6JM2oSdRYq-2BQuWSjqnLFBvQVkYtemFoLqE5LB2A3M46sqUSTAnLe-2FpyDh6QrCE51yxySc2ANmgPuSdlZW4Y3eT-2BF6sNgJzUHfhHjs59W-2BHe-2Bld1DPOBwU5mZjoTOpDwefHbfjzg1eQmdvzamuak048yHpfPehstzb0-2BtPnifS73Jl8QEZNYf9nblAtCP-2FvQiDiF1mENq6LYsToEesC5VmoX0OWCl94SbTZwXRuTitBJbwg5VQ8-2FDcMCkjBtgKbpZVj-2B-2FQvZt4m043Hwc9wSe-2F29-2Ba5TFcv-2Bvp2fOp6vKil7IiAMZLagAlg6pFcgyw-3D-3D"><img alt="Facebook" class="kmButtonBlockIcon" src="https://d3k81ch9hvuctc.cloudfront.net/company/PugUjE/images/f962f629-04ea-4563-95ec-81c15e4b73d1.png?v=0" style="border:0; height:auto; line-height:100%; max-width:100%; outline:none; text-decoration:none; width:25pxpx; display:block" width="25"></a>
+                                                                        </td>
+                                                                      </tr>
+                                                                    </tbody>
+                                                                  </table>
+
+                                                                  <!--[if gte mso 6]></td><td align="left" valign="top"><![endif]-->
+                                                                  <table align="left" border="0" cellpadding="0" cellspacing="0" class="" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed">
+                                                                    <tbody>
+                                                                      <tr>
+                                                                        <td align="center" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed" valign="top">
+                                                                          <a style="max-width:100%; word-wrap:break-word" target="_blank" href="http://trk.klclick.com/ls/click?upn=ubsOi-2FTQiwjZwpSP16Qp0dAu82t7ppwFWovJufIXM8g-2Flrh5cKlHu-2FHW4d7dErerNdGnTjM7BEvYze7ofV8sAHVcq5Dg4Zg72-2B-2Bm3iNf-2Bdoi3w78djqXlW31XQcF-2BPCmaziDSNJ9U-2BfTiKk8veVrW8-2B9zHlP6B6DgjbZesl51lLfw-2BfhBq4PRoz4xSCdnuTegntIwoAqf1FH8yZlKQuaO0632XBEs-2BV16XA1UO5NL56gN1wVBOa01YOEsCa6XADy-2Btya9qUokG7Q2N9CGj9new-3D-3DUerW_j-2F0O98F5U4fETp-2F1Yg8av1mqjk53BdiW-2B1OXixIjTdbAACIf1y-2B-2FR3zbO0NxcM0RZ-2Fkde8ff-2BoCG56QOxzsRs-2FfZc6JM2oSdRYq-2BQuWSjqnLFBvQVkYtemFoLqE5LB2A3M46sqUSTAnLe-2FpyDh6QrCE51yxySc2ANmgPuSdlZW4Y3eT-2BF6sNgJzUHfhHjs59W-2BHe-2Bld1DPOBwU5mZjoTOswqNhPsnX562RTAZaE4rA4GpAWlzGNKEjHJPa5AB-2FrJX4BEU5qLdzqpnsuSvBdXB3-2ByZ1zQoAxbMV0yJj8o09PitlPfndJSP4y8uAmz-2F6l19fAZSpkf-2B-2BEr25-2FbvXw9D7VfpJBKeWZBehiM9FjcSyqNGjfUCITiRFhA6qX9wr-2BetKe5IXj4Fp5VpfV4zcaugQ-3D-3D"><img alt="Base Blog" class="kmButtonBlockIcon" src="https://d3k81ch9hvuctc.cloudfront.net/company/PugUjE/images/9b17ac5f-3f78-446b-8e3c-aca65514334d.png?v=0" style="border:0; height:auto; line-height:100%; max-width:100%; outline:none; text-decoration:none; width:25pxpx; display:block" width="25"></a>
+                                                                        </td>
+                                                                      </tr>
+                                                                    </tbody>
+                                                                  </table>
+
+                                                                  <!--[if gte mso 6]></td><td align="left" valign="top"><![endif]-->
+                                                                </td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <!--[if !mso]>
+<!-->
+                </div>
+              </div>
+              <div style="display:none !important;visibility:hidden;mso-hide:all;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">‌</div>
+
+              <!--<![endif]-->
+
+              <!--[if mso]>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            <![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+ 
+   </body>
+</html>
